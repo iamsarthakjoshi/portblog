@@ -1,4 +1,4 @@
-export default interface {
-    name: string;
-    picture: string;
+export default interface IAuthor {
+  name: string;
+  picture: string;
 }
