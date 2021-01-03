@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { GetStaticProps, GetStaticPaths } from 'next';
-import DOMPurify from 'isomorphic-dompurify';
+// import DOMPurify from 'isomorphic-dompurify';
 
 import Layout from '../../components/common/Layout';
 import DateFormatter from '../../components/common/DateFormatter';
@@ -8,8 +8,8 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 
 const classes = {
   wrapper: 'mt-16 blog-content',
-  title: 'mt-16 text-4xl text-gray-900 font-bold',
-  date: 'text-gray-600 font-normal text-sm',
+  title: 'mt-16 text-4xl text-gray-900 font-bold dark:text-white',
+  date: 'text-gray-600 font-normal text-sm dark:text-gray-200',
 };
 
 export default function BlogPost({ postData }) {
@@ -27,7 +27,8 @@ export default function BlogPost({ postData }) {
       <div
         className={classes.wrapper}
         dangerouslySetInnerHTML={{
-          __html: DOMPurify.sanitize(post.contentHtml),
+          __html: post.contentHtml,
+          // __html: DOMPurify.sanitize(post.contentHtml),
         }}
       />
     </Layout>
