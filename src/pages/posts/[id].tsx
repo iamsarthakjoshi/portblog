@@ -18,7 +18,9 @@ export default function BlogPost({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>{post.title}</title>
+        <title>{post.title} | Sarthak's Blog</title>
+        <meta name="og:title" content={post.title} key="blog-title" />
+        <meta property="og:image" content={post.ogImage} key="blog-og-image" />
       </Head>
       <h1 className={classes.title}>{post.title}</h1>
       <p className={classes.date}>

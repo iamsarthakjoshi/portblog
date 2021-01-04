@@ -37,6 +37,7 @@ export default function Header({
             className={classes.image}
             src="/images/profile_image.jpeg"
             alt={userInfo.name}
+            title="Profile Image"
           />
         </Link>
       </div>

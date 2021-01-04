@@ -1,9 +1,20 @@
 ---
 title: 'Simple Demostration of Celery & Rabbitmq'
+excerpt: 'Flask app that demonstrates the features of Celery and Rabbitmq to manage tasks or jobs that need to be handled asynchronously maintaining the order and priority because they are long-running tasks.'
+coverImage: 'https://miro.medium.com/max/4800/1*MUvExt14CjchhnOxXxYJuA.png'
+author:
+  name: Sarthak Joshi
+  picture: '/images/mero_profile_picture.jpg'
 date: '2021-01-03'
+ogImage: 'https://miro.medium.com/max/4800/1*MUvExt14CjchhnOxXxYJuA.png'
 ---
 
 ## Celery with RabbitMQ
+
+![green forest caption="As you can see, forests contain many species of life."](https://miro.medium.com/max/4800/1*MUvExt14CjchhnOxXxYJuA.png)
+_Illustration by [Magdalena Tomczyk](https://dribbble.com/magdalenatomczyk)_
+
+<figcaption>The Amazon Rainforest contains a multitude of species and is vital to the Earth's survival.</figcaption>
 
 This is a simple app that demonstrates the features of Celery and Rabbitmq to manage tasks or jobs that need to be handled asynchronously maintaining the order and priority because they are long-running tasks.
 

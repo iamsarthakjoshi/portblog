@@ -80,7 +80,8 @@
 }
 
 .blog-content a:hover {
-  @apply text-green-300;
+  @apply dark:text-green-300;
+  @apply text-green-500;
 }
 
 .blog-content p,
