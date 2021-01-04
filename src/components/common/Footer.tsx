@@ -1,5 +1,6 @@
 const classes = {
-  footer: 'z-10 text-sm text-gray-600 dark:text-gray-400 text-center pb-1',
+  footer:
+    'z-10 text-sm text-gray-600 dark:text-gray-400 text-center py-1 px-10',
   footerA: 'z-10 text-green-500 cursor-pointer hover:underline',
 };
 
