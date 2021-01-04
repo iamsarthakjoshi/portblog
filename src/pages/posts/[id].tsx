@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { GetStaticProps, GetStaticPaths } from 'next';
-// import DOMPurify from 'isomorphic-dompurify';
+import DOMPurify from 'isomorphic-dompurify';
 
 import Layout from '../../components/common/Layout';
 import DateFormatter from '../../components/common/DateFormatter';
@@ -27,8 +27,8 @@ export default function BlogPost({ postData }) {
       <div
         className={classes.wrapper}
         dangerouslySetInnerHTML={{
-          __html: post.contentHtml,
-          // __html: DOMPurify.sanitize(post.contentHtml),
+          // __html: post.contentHtml,
+          __html: DOMPurify.sanitize(post.contentHtml),
         }}
       />
     </Layout>
