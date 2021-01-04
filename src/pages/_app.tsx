@@ -1,8 +1,27 @@
-import { ThemeProvider } from 'next-themes';
+import { useEffect } from 'react';
 import { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
+import { ThemeProvider } from 'next-themes';
+
+import * as gtag from '../lib/gtag';
 import '../styles/globals.css';
 
-export default function App({ Component, pageProps }: AppProps) {
+const isProduction = process.env.NODE_ENV === 'production';
+
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url: URL) => {
+      /* invoke analytics function only for production */
+      if (isProduction) gtag.pageview(url);
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <ThemeProvider
       attribute="class"
