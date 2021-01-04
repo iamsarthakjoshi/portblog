@@ -35,7 +35,7 @@ export default function Header({
         <Link href="/">
           <img
             className={classes.image}
-            src="/images/profile_image.jpeg"
+            src="/images/mero_profile_picture.jpg"
             alt={userInfo.name}
             title="Profile Image"
           />
