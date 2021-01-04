@@ -12,7 +12,7 @@ Features:
 - Dynamic Routes
 - & more!
 
-Template inspired by [Ryan Fitzgerald](https://elastic-meninsky-aa7c74.netlify.app/).
+Template inspired by [Ryan Fitzgerald](https://github.com/RyanFitzgerald/devfolio).
 
 Feel free to clone.
 
