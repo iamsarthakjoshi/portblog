@@ -4,8 +4,10 @@ import IUserInfo from '../../interfaces/IUserInfo';
 
 const classes = {
   wrapper: 'block mb-6 md:flex',
-  imageWrapper: 'w-full max-w-150',
-  image: 'rounded-full transform transition-all duration-150 hover:scale-105',
+  imageWrapper:
+    'w-full max-w-150 h-150 min-h-full bg-gray-300 overflow-hidden rounded-full',
+  image:
+    'object-fit transition duration-500 ease-in-out transform hover:scale-105',
   contentWrapper: 'flex-none pt-6 md:pt-1 md:flex-1 md:pl-20',
   name:
     'text-5xl text-gray-900 font-bold leading-tight hover:text-black dark:text-gray-100 lg:dark:hover:text-green-500',

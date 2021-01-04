@@ -2,8 +2,9 @@ import Link from 'next/link';
 
 const classes = {
   wrapper: 'mb-6',
-  name: 'font-semibold text-gray-900 pb-1 cursor-pointer dark:text-white',
-  description: 'text-base text-gray-700 font-normal dark:text-gray-200 ',
+  name:
+    'font-semibold text-gray-900 pb-1 cursor-pointer dark:text-white lg:dark:hover:text-green-500',
+  description: 'text-base text-gray-700 font-normal dark:text-gray-200',
 };
 
 export default function SummaryItem({

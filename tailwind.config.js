@@ -4,7 +4,7 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: ['./src/components/**/*.{js,ts,jsx,tsx}', './src/pages/**/*.{js,ts,jsx,tsx}'],
-  darkMode: 'class',
+  darkMode: 'class', // class or media
   theme: {
     fontFamily: {
       sans: ['"Source Sans Pro"', 'sans-serif']
@@ -29,6 +29,7 @@ module.exports = {
    transitionProperty: ['hover', 'focus'],
    scale: ['hover', 'active'],
    rotate: ['hover', 'active'],
+   animation: ['responsive', 'motion-safe', 'motion-reduce'],
   }},
   plugins: [],
 };

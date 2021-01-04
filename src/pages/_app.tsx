@@ -4,7 +4,12 @@ import '../styles/globals.css';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class" disableTransitionOnChange enableSystem>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      disableTransitionOnChange
+      enableSystem
+    >
       <Component {...pageProps} />
     </ThemeProvider>
   );
