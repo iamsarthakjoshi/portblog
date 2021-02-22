@@ -14,8 +14,6 @@ ogImage: 'https://miro.medium.com/max/4800/1*MUvExt14CjchhnOxXxYJuA.png'
 ![green forest caption="As you can see, forests contain many species of life."](https://miro.medium.com/max/4800/1*MUvExt14CjchhnOxXxYJuA.png)
 _Illustration by [Magdalena Tomczyk](https://dribbble.com/magdalenatomczyk)_
 
-<figcaption>The Amazon Rainforest contains a multitude of species and is vital to the Earth's survival.</figcaption>
-
 This is a simple app that demonstrates the features of Celery and Rabbitmq to manage tasks or jobs that need to be handled asynchronously maintaining the order and priority because they are long-running tasks.
 
 This project is modified, improved and updated version of [celery-rabbitmq-tutorial](http://suzannewang.com/celery-rabbitmq-tutorial/) by @suzannewang.
@@ -38,7 +36,9 @@ $ brew install rabbitmq
 $ sudo rabbitmq-server -detached
 ```
 
-### Create a RabbitMQ user and virtual host (vhost) with RabbitMQ’s command line tool that manages the broker. vhosts are essentially namespaces to group queues and user permissions, helping to manage the broker.
+### Create a RabbitMQ user and virtual host
+
+Create a RabbitMQ user and virtual host (vhost) with RabbitMQ’s command line tool that manages the broker. vhosts are essentially namespaces to group queues and user permissions, helping to manage the broker.
 
 ```bash
 $ sudo rabbitmqctl add_user [USERNAME] [PASSWORD]
@@ -46,7 +46,9 @@ $ sudo rabbitmqctl add_vhost [VHOST_NAME]
 $ sudo rabbitmqctl set_permissions -p [VHOST_NAME] [USERNAME] ".*" ".*" ".*"
 ```
 
-### Provide permission to configure, write, and read for your user in this vhost. You’ll need to remember the username, password, and vhost when specifying the broker url in the server script. (In the example repo, the username is admin, password is password, and vhost is test.) More commands [here](https://www.rabbitmq.com/man/rabbitmqctl.1.man.html).
+### Provide permission to configure, write, and read for your user in this vhost. 
+
+You’ll need to remember the username, password, and vhost when specifying the broker url in the server script. (In the example repo, the username is admin, password is password, and vhost is test.) More commands [here](https://www.rabbitmq.com/man/rabbitmqctl.1.man.html).
 
 ```bash
 $ sudo rabbitmqctl set_permissions -p [VHOST_NAME] [USERNAME] ".*" ".*" ".*"
