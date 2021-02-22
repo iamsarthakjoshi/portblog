@@ -8,7 +8,7 @@ import SvgDotPattern from './SvgDotPattern';
 
 const classes = {
   outerWrapper: 'relative dark:bg-gray-800 min-h-screen',
-  wrapper: 'p-8 pb-10 max-w-screen-xl xs:p-12',
+  wrapper: 'p-8 pb-40 max-w-screen-xl xs:p-12',
   svg: 'hidden fixed transform right-0 top-5 z-0 xl:block',
   emojis: 'text-xl transform transition-all duration-30 hover:text-2xl',
   footer: 'z-10 text-sm text-gray-600 dark:text-gray-400 text-center pb-1',
