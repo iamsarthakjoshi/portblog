@@ -12,7 +12,7 @@ export const projects: IProject[] = [
   {
     name: 'Create Charts with Charts JS',
     description:
-      'A simple Flask api with React UI that generates simple charts. Application is dockerized.',
+      'A simple Flask api with React UI no that generates simple charts. Application is dockerized.',
     link: 'https://github.com/iamsarthakjoshi/python-reactjs-chartjs-docker',
   },
   {
@@ -24,6 +24,9 @@ export const projects: IProject[] = [
 ];
 
 export const experience: IExperience[] = [
+  {
+    name: 'Drive Yello PTY LTD',
+    description: 'Fullstak Engineer, April 2021 - Present',
   {
     name: 'Core Intelligence Technologies Pty. Ltd.',
     description: 'Lead Fullstack Web Developer, December 2019 - December 2020',
