@@ -26,7 +26,7 @@ export const projects: IProject[] = [
 export const experience: IExperience[] = [
   {
     name: 'Drive Yello PTY LTD',
-    description: 'Fullstak Engineer, April 2021 - Present',
+    description: 'Fullstack Engineer, April 2021 - Present',
   },
   {
     name: 'Core Intelligence Technologies Pty. Ltd.',
