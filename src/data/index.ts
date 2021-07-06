@@ -31,7 +31,7 @@ export const experience: IExperience[] = [
   },
   {
     name: 'Core Intelligence Technologies Pty. Ltd.',
-    description: 'Lead Fullstack Web Developer, December 2019 - December 2020',
+    description: 'Lead Fullstack Web Developer, December 2019 - March 2021',
     link: 'https://www.linkedin.com/in/joshisarthak/',
     responsibilities: [
       'Building API-driven microservices that handles response from multiple ML API, processing the output.',
