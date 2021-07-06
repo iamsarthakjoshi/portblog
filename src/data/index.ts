@@ -27,6 +27,7 @@ export const experience: IExperience[] = [
   {
     name: 'Drive Yello PTY LTD',
     description: 'Fullstak Engineer, April 2021 - Present',
+  },
   {
     name: 'Core Intelligence Technologies Pty. Ltd.',
     description: 'Lead Fullstack Web Developer, December 2019 - December 2020',
